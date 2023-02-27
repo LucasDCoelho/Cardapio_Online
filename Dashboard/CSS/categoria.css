@@ -1,0 +1,49 @@
+@import url("reset.css");
+
+#main-dashboard{
+    width: 85vw;
+    max-height: 100%;
+    background-color: #FFF;
+    margin: 3rem 5rem;
+    border-radius: 20px;
+    box-shadow: .2rem .2rem .3rem #545454;
+    font-size: 23px;
+}
+
+#new-category{
+    background-color: green;
+    color: aliceblue;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+#new-category:hover{
+    background-color: rgb(2, 171, 2);
+    color: aliceblue;
+}
+
+#btn-edit{
+    background-color: rgb(255, 149, 0);
+    color: aliceblue;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+#btn-edit:hover{
+    background-color: rgb(216, 126, 0);
+}
+
+#btn-delete{
+    background-color: red;
+    color: rgb(247, 250, 252);
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+#btn-delete:hover{
+    background-color: rgb(235, 2, 2);
+    color: rgb(247, 250, 252);
+}
