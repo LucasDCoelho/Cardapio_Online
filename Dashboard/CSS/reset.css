@@ -27,6 +27,7 @@ body{
 #aside-menu > h1{
     color: rgb(253, 255, 255);
     font-size: 52px;
+    font-weight: inherit;
 }
 
 #aside-menu > ul > li{
