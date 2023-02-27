@@ -1,0 +1,29 @@
+@import url("reset.css");
+
+#main-dashboard{
+    width: 85vw;
+    max-height: 100%;
+    background-color: #b6b6b6;
+    margin: 3rem 5rem;
+    border-radius: 20px;
+    box-shadow: .2rem .2rem .3rem #545454;
+    font-size: 35px;
+}
+
+#main-dashboard > h1{
+    text-align: center;
+    margin: 20px 0;
+    color: aliceblue;
+    text-shadow: .2rem .2rem #5454544d;
+}
+
+#main-dashboard > section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-dashboard > section > img{
+   width: 70%;
+   margin-top: 30px;
+}

@@ -1,0 +1,44 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Rubik', sans-serif;
+}
+
+body{
+    display: flex;
+}
+
+#aside-menu{
+    width: 15vw;
+    height: 100vh;
+    background-color: #545454;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 30px;
+    gap: 50px;
+    padding-top: 4rem;
+}
+
+#aside-menu > h1{
+    color: rgb(253, 255, 255);
+    font-size: 52px;
+}
+
+#aside-menu > ul > li{
+    margin-bottom: 15px;
+
+}
+
+#aside-menu > ul > li > a{
+    color: aliceblue;
+}
+
+#aside-menu > ul > li > a:hover{
+    color: rgb(163, 208, 248);
+}
