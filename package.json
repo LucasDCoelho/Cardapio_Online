@@ -1,5 +1,23 @@
 {
   "dependencies": {
+    "boxicons": "^2.1.4",
     "chart.js": "^4.2.1"
-  }
+  },
+  "name": "cardapio_online",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucasDCoelho/Cardapio_Online.git"
+  },
+  "author": "Lucas_Coelho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LucasDCoelho/Cardapio_Online/issues"
+  },
+  "homepage": "https://github.com/LucasDCoelho/Cardapio_Online#readme"
 }

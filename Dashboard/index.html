@@ -10,67 +10,125 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
-<body id="container">
-  <aside id="aside-menu">
-    <section>
-      <h2>Dashboard</h2>
-      <ul>
-        <li><a href="./cad.produto.html">Produtos</a></li>
-        <li><a href="./cad.categoria.html">Categorias</a></li>
-      </ul>
-    </section>
+<body>
+  <div id="container">
 
-    <section>
+    <div class="container-item">
+      <aside id="aside-menu">
+        <section>
+          <button id="close" class="close">
+            <i class="bx bx-x"></i>
+          </button>
+          <section>
+            <h2>Dashboard</h2>
+            <ul>
+              <li><a href="./cad.produto.html">Produtos</a></li>
+              <li><a href="./cad.categoria.html">Categorias</a></li>
+            </ul>
+          </section>
+          
+        </section>
 
-      <p>Criado por Lucas Coelho</p>
-    </section>
-  </aside>
+        <section>
 
-  <main id="main-dashboard">
-    <section>
-      <p>Olá Lucas, Bem-vindo e volta</p>
-      <h1>Seu Dashboard</h1>
-    </section>
+          <p>Criado por Lucas Coelho</p>
+        </section>
+      </aside>
+    </div>
 
+    <div class="container-item flex">
 
-    <section>
-     
-        <canvas id="myChart" width="500px" height="500px"></canvas>
-      
+      <main id="main-dashboard">
+        <section>
+          <button id="hamburguer" class="hamburguer">
+            <i class='bx bx-menu'></i>
+          </button>
+          <section>
+            <p>Olá Lucas, Bem-vindo e volta</p>
+            <h1>Seu Dashboard</h1>
+          </section>
 
-    
-
-      <script>
-        const ctx = document.getElementById('myChart');
-
-        
-       
-        const data = {
-          labels: [
-            'Red',
-            'Blue',
-            'Yellow'
-          ],
-          datasets: [{
-            label: 'My First Dataset',
-            data: [300, 50, 100],
-            backgroundColor: [
-              'rgb(255, 99, 132)',
-              'rgb(54, 162, 235)',
-              'rgb(255, 205, 86)'
-            ],
-            hoverOffset: 4
-          }]
-        };
-      </script>
-    </section>
-  </main>
+        </section>
 
 
+        <section>
+          <canvas id="myDashboard" width="10%" height="10%"></canvas>
+          <canvas id="myControleDePessoas" width="10%" height="10%"></canvas>
+        </section>
+      </main>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    const ctx = document.getElementById('myDashboard');
+    const peopleControl = document.getElementById('myControleDePessoas');
+
+    new Chart(ctx, {
+      type: 'doughnut',
+      data: {
+        labels: ['Recebidos', 'Despesas'],
+        datasets: [{
+          label: 'R$',
+          data: ['30000', '10000'],
+          borderWidth: 1
+
+        }]
+      },
+      options: {
+        color: "#FFFFFF",
+      }
+    });
 
 
+
+    new Chart(peopleControl, {
+      type: 'line',
+      data: {
+        labels: ['Fevereiro', 'Março', 'Abril', 'Maio', 'Junho'],
+        datasets: [{
+          label: 'Vendas',
+          data: [20, 50, 60, 50, 100],
+          borderWidth: 1
+        }]
+      },
+      options: {
+
+        color: "#FFFFFF",
+        scales: {
+          color: "#FFFFFF",
+          x: {
+            ticks: {
+              color: 'white'
+            },
+            grid: {
+              color: '#FFFFFF70'
+            },
+          },
+          y: {
+            grid: {
+              color: '#FFFFFF70'
+            },
+            ticks: {
+              color: 'white'
+            },
+            beginAtZero: true,
+          }
+        }
+      }
+    });
+
+
+
+
+
+
+
+
+  </script> 
+
+  <script src="./JS/script.js"></script>
 </body>
-
 </html>
