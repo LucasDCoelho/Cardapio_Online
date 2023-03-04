@@ -1,96 +1,100 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./CSS/categoria.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div id="container">
 
-      <div class="container-item">
-        <aside id="aside-menu">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./CSS/categoria.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="container">
+
+    <div class="container-item">
+      <aside id="aside-menu">
+        <section>
+          <button id="close" class="close">
+            <i class="bx bx-x"></i>
+          </button>
           <section>
-            <button id="close" class="close">
-              <i class="bx bx-x"></i>
-            </button>
-            <section>
-              <h2>Dashboard</h2>
-              <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="./cad.produto.html">Produtos</a></li>
-              </ul>
-            </section>
+            <h2>Dashboard</h2>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="./cad.produto.html">Produtos</a></li>
+            </ul>
           </section>
-          <section>
-            <p>Criado por Lucas Coelho</p>
-          </section>
-        </aside>
-      </div>
-  
-      <div>
-        <main id="main-dashboard">
+        </section>
+        <section>
+          <p>Criado por Lucas Coelho</p>
+        </section>
+      </aside>
+    </div>
+
+    <div>
+      <main id="main-dashboard">
+        <section>
           <section>
             <section>
-              <button id="new-category">
-                <i class='bx bx-plus'></i>Criar categoria
+              <button id="hamburguer" class="hamburguer">
+                  <i class='bx bx-menu'></i>
               </button>
             </section>
-            <table id="main-table-dashboard">
-              <thead>
-                <tr>
-                  <th>Id</th>
-                  <th>Nome</th>
-                  <th>Categoria</th>
-                  <th>Preço</th>
-                  <th>Ações</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>Malcolm Lockyer</td>
-                  <td>1961</td>
-                  <td>R$7,00</td>
-                  <td>
-                    <button id="btn-edit">Editar</button>
-                    <button id="btn-delete">Deletar</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>The Eagles</td>
-                  <td>1972</td>
-                  <td>R$7,00</td>
-                  <td>
-                    <button id="btn-edit">Editar</button>
-                    <button id="btn-delete">Deletar</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>Earth, Wind, and Fire</td>
-                  <td>1975</td>
-                  <td>R$7,00</td>
-                  <td>
-                    <button id="btn-edit">Editar</button>
-                    <button id="btn-delete">Deletar</button>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+          
+            <section>
+              <button id="new-category">
+                  <i class='bx bx-plus'></i>Criar Categoria
+              </button>
+            </section>
           </section>
-        </main>
-      </div>
+          <table id="main-table-dashboard">
+            <thead>
+              <tr>
+                <th>Id</th>
+                <th>Nome da Categoria</th>
+                <th>Ações</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="Id">1</td>
+                <td data-label="Nome da Categoria">Bebidas Quentes</td>
+                <td data-label="Ações">
+                  <button id="btn-edit">Editar</button>
+                  <button id="btn-delete">Deletar</button>
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Id">2</td>
+                <td data-label="Nome da Categoria">Bebidas Geladas</td>
+                <td data-label="Ações">
+                  <button id="btn-edit">Editar</button>
+                  <button id="btn-delete">Deletar</button>
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Id">3</td>
+                <td data-label="Nome da Categoria">Sorvetes</td>
+                <td data-label="Ações">
+                  <button id="btn-edit">Editar</button>
+                  <button id="btn-delete">Deletar</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </main>
     </div>
-  </body>
+  </div>
+
+
+
+  <script src="./JS/script.js"></script>
+</body>
+
 </html>
