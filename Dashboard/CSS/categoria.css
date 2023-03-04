@@ -1,13 +1,17 @@
 @import url("reset.css");
 
 #main-dashboard{
-    width: 85vw;
-    max-height: 100%;
-    background-color: #FFF;
+    background-color: var(--color-quartenary);
     margin: 3rem 5rem;
     border-radius: 20px;
     box-shadow: .2rem .2rem .3rem #545454;
     font-size: 23px;
+}
+
+#main-dashboard > section > section:first-of-type {
+    display: flex;
+    align-items: center;
+    justify-content: end;
 }
 
 #new-category{
@@ -16,6 +20,7 @@
     padding: 10px;
     margin: 10px;
     border-radius: 15px;
+    cursor: pointer;
 }
 
 #new-category:hover{
@@ -23,12 +28,36 @@
     color: aliceblue;
 }
 
+#main-table-dashboard{
+    padding: 50px;
+    color: var(--color-primary);
+}
+
+
+#main-table-dashboard > thead > tr > th{
+    padding: 20px;
+    text-align: center;
+}
+#main-table-dashboard > tbody > tr > td{
+    padding: 10px;
+    text-align: center;
+}
+
+#main-table-dashboard > tbody > tr > td:last-of-type{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 #btn-edit{
     background-color: rgb(255, 149, 0);
     color: aliceblue;
     padding: 5px 10px;
     border-radius: 10px;
     margin-right: 10px;
+    border: 0;
+    cursor: pointer;
 }
 
 #btn-edit:hover{
@@ -41,6 +70,8 @@
     padding: 5px 10px;
     border-radius: 10px;
     margin-right: 10px;
+    border: 0;
+    cursor: pointer;
 }
 
 #btn-delete:hover{
