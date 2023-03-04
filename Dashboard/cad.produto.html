@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/produto.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="container">
+
+      <div class="container-item">
+        <aside id="aside-menu">
+          <section>
+            <button id="close" class="close">
+              <i class="bx bx-x"></i>
+            </button>
+            <section>
+              <h2>Dashboard</h2>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./cad.categoria.html">Categorias</a></li>
+              </ul>
+            </section>
+          </section>
+          <section>
+            <p>Criado por Lucas Coelho</p>
+          </section>
+        </aside>
+      </div>
+  
+      <div>
+        <main id="main-dashboard">
+          <section>
+            <section>
+                <section>
+                    <button id="hamburguer" class="hamburguer">
+                        <i class='bx bx-menu'></i>
+                    </button>
+                </section>
+                
+                <section>
+                    <button id="new-product">
+                        <i class='bx bx-plus'></i>Criar Produto
+                    </button>
+                </section>
+            </section>
+            <table id="main-table-dashboard">
+              <thead>
+                <tr>
+                  <th>Id</th>
+                  <th>Nome</th>
+                  <th>Categoria</th>
+                  <th>Preço</th>
+                  <th>Ações</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-label="Id" >1</td>
+                  <td data-label="Nome" >Chá</td>
+                  <td data-label="Categoria" >Bebidas Quentes</td>
+                  <td data-label="Preço" >R$7,00</td>
+                  <td data-label="Ações" >
+                    <button id="btn-edit">Editar</button>
+                    <button id="btn-delete">Deletar</button>
+                  </td>
+                </tr>
+                <tr> 
+                  <td data-label="Id" >2</td>
+                  <td data-label="Nome" >Café</td>
+                  <td data-label="Categoria" >Bebidas Geladas</td>
+                  <td data-label="Preço" >R$7,00</td>
+                  <td data-label="Ações" >
+                    <button id="btn-edit">Editar</button>
+                    <button id="btn-delete">Deletar</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Id" >3</td>
+                  <td data-label="Nome" >Sorvete de Baunilha</td>
+                  <td data-label="Categoria" >Sorvetes</td>
+                  <td data-label="Preço" >R$7,00</td>
+                  <td data-label="Ações" >
+                    <button id="btn-edit">Editar</button>
+                    <button id="btn-delete">Deletar</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </main>
+      </div>
+    </div>
+
+
+
+    <script src="./JS/script.js"></script>
+  </body>
+</html>

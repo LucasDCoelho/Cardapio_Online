@@ -1,4 +1,8 @@
-@import url("reset.css");
+@import url(reset.css);
+
+*{
+    outline: none;
+}
 
 #container > div:last-of-type{
     width: 60vw;
@@ -18,19 +22,21 @@
 #main-dashboard > section > section:first-of-type {
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: space-between;
+    width: 100%;
 }
 
-#new-category{
+#new-product{
     background-color: green;
     color: aliceblue;
     padding: 10px;
+    margin: 10px;
     border-radius: 15px;
     cursor: pointer;
     border: 0;
 }
 
-#new-category:hover{
+#new-product:hover{
     background-color: rgb(2, 171, 2);
     color: aliceblue;
 }
@@ -64,7 +70,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
 }
 
 
@@ -120,10 +125,6 @@
         transition: 250ms ease-in-out;
     }
 
-    #main-dashboard > section > section:first-of-type{
-        justify-content:space-between;
-        width: 100%;
-    }
     
 
     .close{
