@@ -33,9 +33,6 @@
     color: var(--color-primary);
 }
 
-#main-table-dashboard > tbody > tr {
-
-}
 
 #main-table-dashboard > thead > tr > th{
     padding: 20px;
