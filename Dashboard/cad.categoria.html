@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="./CSS/categoria.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <script src="https://cdn.tailwindcss.com"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap"
@@ -16,54 +15,82 @@
     />
   </head>
   <body>
-    <aside id="aside-menu">
-      <h1>Menu</h1>
-      <ul>
-        <li><a href="./index.html">Dashboard</a></li>
-        <li><a href="./cad.produto.html">Produtos</a></li>
-      </ul>
-    </aside>
+    <div id="container">
 
-    <main id="main-dashboard" class="flex justify-center items-center border border-solid ">
-      <section class="bg-white">
-        <section class="flex justify-end items-center">
-          <button id="new-category" class="flex items-center"><i class='bx bx-plus'></i>Criar categoria</button>
-        </section>
-        <table class="text-center">
-          <thead>
-            <tr>
-              <th class="text-md px-6 py-3">Id</th>
-              <th class="text-md px-6 py-3">Nome</th>
-              <th class="text-md px-6 py-3">Categoria</th>
-              <th class="text-md px-6 py-3">Preço</th>
-              <th class="text-md px-6 py-3">Ações</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="text-md px-6 py-3">1</td>
-              <td class="text-md px-6 py-3">Malcolm Lockyer</td>
-              <td class="text-md px-6 py-3">1961</td>
-              <td class="text-md px-6 py-3">R$7,00</td>
-              <td class="text-md px-6 py-3"><button id="btn-edit">Editar</button><button id="btn-delete">Deletar</button></td>
-            </tr>
-            <tr>
-              <td class="text-md px-6 py-3">2</td>
-              <td class="text-md px-6 py-3">The Eagles</td>
-              <td class="text-md px-6 py-3">1972</td>
-              <td class="text-md px-6 py-3">R$7,00</td>
-              <td class="text-md px-6 py-3"><button id="btn-edit">Editar</button><button id="btn-delete">Deletar</button></td>
-            </tr>
-            <tr>
-              <td class="text-md px-6 py-3">3</td>
-              <td class="text-md px-6 py-3">Earth, Wind, and Fire</td>
-              <td class="text-md px-6 py-3">1975</td>
-              <td class="text-md px-6 py-3">R$7,00</td>
-              <td class="text-md px-6 py-3"><button id="btn-edit">Editar</button><button id="btn-delete">Deletar</button></td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-    </main>
+      <div class="container-item">
+        <aside id="aside-menu">
+          <section>
+            <button id="close" class="close">
+              <i class="bx bx-x"></i>
+            </button>
+            <section>
+              <h2>Dashboard</h2>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./cad.produto.html">Produtos</a></li>
+              </ul>
+            </section>
+          </section>
+          <section>
+            <p>Criado por Lucas Coelho</p>
+          </section>
+        </aside>
+      </div>
+  
+      <div>
+        <main id="main-dashboard">
+          <section>
+            <section>
+              <button id="new-category">
+                <i class='bx bx-plus'></i>Criar categoria
+              </button>
+            </section>
+            <table id="main-table-dashboard">
+              <thead>
+                <tr>
+                  <th>Id</th>
+                  <th>Nome</th>
+                  <th>Categoria</th>
+                  <th>Preço</th>
+                  <th>Ações</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Malcolm Lockyer</td>
+                  <td>1961</td>
+                  <td>R$7,00</td>
+                  <td>
+                    <button id="btn-edit">Editar</button>
+                    <button id="btn-delete">Deletar</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>The Eagles</td>
+                  <td>1972</td>
+                  <td>R$7,00</td>
+                  <td>
+                    <button id="btn-edit">Editar</button>
+                    <button id="btn-delete">Deletar</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Earth, Wind, and Fire</td>
+                  <td>1975</td>
+                  <td>R$7,00</td>
+                  <td>
+                    <button id="btn-edit">Editar</button>
+                    <button id="btn-delete">Deletar</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </main>
+      </div>
+    </div>
   </body>
 </html>
